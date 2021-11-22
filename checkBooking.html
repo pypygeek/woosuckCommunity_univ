@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>우석헌 커뮤니티</title>
+    <link rel="shortcut icon" href="https://www.woosuk.ac.kr/favicon.ico" type="image/x-ico"/>
+    <link rel="stylesheet" href="css/checkbooking.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/checkbooking.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html"><img id="logotype" src="images/main_logo.JPG" alt="메인로고"></a>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="reason.html">소개</a></li>
+                <li><a href="notice.html">이용방법</a></li>
+                <li><a href="realtimeWasherCheck.html">실시간 세탁기 정보</a></li>
+                <li><a href="booking.html">예약하기</a></li>
+                <li><a href="checkBooking.html">예약확인</a></li>
+                <li><a href="market.html">중고장터</a></li>
+                <li><a href="board.html">게시판</a></li>
+            </ul>
+        </header>
+    <section>
+        <div id="sectionpart">
+            <h2>예약확인</h2>
+            <form action="check_booking.html" id="checkform">
+                <table cellspacing="0">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="80%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>예약자명</th>
+                            <td><input type="text" name="guestname" id="user_name" class="inputtype" autocomplete="off" value="" autofocus></td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td>
+                                <select name="guestphonenumber1" class="selecttype1">
+                                    <option value="010">010</option>
+                                </select>
+                                <input type="text" name="guestphonenumber2" autocomplete="off" maxlength="4" id="user_p1" class="inputtype" value="">
+                                <input type="text" name="guestphonenumber3" autocomplete="off" maxlength="4" id="user_p2" class="inputtype" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tfoot>
+                        <td class="tablebottom"></td>
+                            <input type="submit" value="예약확인" class="buttontype">
+                        </td>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

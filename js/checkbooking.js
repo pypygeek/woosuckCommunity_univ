@@ -1,0 +1,42 @@
+window.onload = function(){
+    
+    document.getElementById("checkform").onsubmit = function()
+    {
+        var username = document.getElementById("user_name");
+        var userpnumber = new Array(document.getElementById("user_p1"),document.getElementById("user_p2"));
+        var userbnumber = document.getElementById("user_booknum");
+
+        var namevalue = document.getElementById("guestname");
+        var bookingvalue = document.getElementById("bookingnumber");
+
+        if(username.value == "")
+        {
+            alert("예약자명을 입력해주세요!");
+            username.focus();
+            return false;
+        }
+        else if(userpnumber[0].value == "" || userpnumber[1].value == "")
+        {
+            alert("연락처를 입력해주세요!");
+            for(var i=0;i<userpnumber.length;i++)
+            {
+                if(userpnumber[i].value == "")
+                {
+                    userpnumber[i].focus();
+                    break;
+                }
+            }
+            return false;
+        }
+        else
+        {
+            bookingvalue.value = document.getElementById("user_booknum").value;
+            namevalue.value = document.getElementById("user_name").value;
+            let today = new Date();
+            var result = confirm(today.toLocaleString() + " 예약 확인되었습니다.");
+            if(result){
+                location.href = "checkbooking.html";
+            }
+        }
+    }
+}

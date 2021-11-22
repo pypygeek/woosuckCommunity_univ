@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>우석헌 커뮤니티</title>
+    <link rel="shortcut icon" href="https://www.woosuk.ac.kr/favicon.ico" type="image/x-ico"/>
+    <link rel="stylesheet" href="css/booking.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/booking.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html"><img id="logotype" src="images/main_logo.JPG" alt="메인로고"></a>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="reason.html">소개</a></li>
+                <li><a href="notice.html">이용방법</a></li>
+                <li><a href="realtimeWasherCheck.html">실시간 세탁기 정보</a></li>
+                <li><a href="booking.html">예약하기</a></li>
+                <li><a href="checkBooking.html">예약확인</a></li>
+                <li><a href="market.html">중고장터</a></li>
+                <li><a href="board.html">게시판</a></li>
+            </ul>
+        </header>
+        <section>
+            <div id="firstarticle">
+                <h2>예약하기</span></h2>
+            </div>
+            <div id="secondarticle">
+                <form action="check_booking.html" id="bookform">
+                    <table cellspacing="0">
+                        <colgroup>
+                            <col width="25%">
+                            <col width="50%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th class="borderright">날짜</th>
+                            <th class="borderright">세탁기/건조기</th>
+                            <th>시간</th>
+                        </tr>
+                        <tr>
+                            <td class="borderright"><input type="date" value="" id="bookdate"></td>
+                            <td class="borderright">
+                                <ul id="themalist">
+                                    <li>
+                                        <a href="#" id="0">세탁기</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="1">건조기</a>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul id="timelist">
+                                    <li><a href="#" id="0">09:00</a></li>
+                                    <li><a href="#" id="1">10:00</a></li>
+                                    <li><a href="#" id="2">11:00</a></li>
+                                    <li><a href="#" id="3">12:00</a></li>
+                                    <li><a href="#" id="4">13:00</a></li>
+                                    <li><a href="#" id="5">14:00</a></li>
+                                    <li><a href="#" id="6">15:00</a></li>
+                                    <li><a href="#" id="7">16:00</a></li>
+                                    <li><a href="#" id="8">17:00</a></li>
+                                    <li><a href="#" id="9">18:00</a></li>
+                                    <li><a href="#" id="10">19:00</a></li>
+                                    <li><a href="#" id="11">20:00</a></li>
+                                    <li><a href="#" id="12">21:00</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="hidden" id="datetext" name="date" value="">
+                                <input type="hidden" id="thematext" name="thema" value="테마">
+                                <input type="hidden" id="timetext" name="time" value="시간">
+                                <input type="submit" class="buttontype" value="예약">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

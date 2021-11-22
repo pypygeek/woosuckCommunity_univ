@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>우석헌 커뮤니티</title>
+    <link rel="shortcut icon" href="https://www.woosuk.ac.kr/favicon.ico" type="image/x-ico"/>
+    <link rel="stylesheet" href="css/writing.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/writing.js"></script>
+    <!-- Toast Editor 2.0.0 -->
+    <!-- https://ui.toast.com/tui-editor -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+</head>
+<body>
+    <div id="container">
+    <header>
+        <a href="index.html"><img id="logotype" src="images/main_logo.JPG" alt="메인로고"></a>
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="reason.html">소개</a></li>
+            <li><a href="notice.html">이용방법</a></li>
+            <li><a href="realtimeWasherCheck.html">실시간 세탁기 정보</a></li>
+            <li><a href="booking.html">예약하기</a></li>
+            <li><a href="checkBooking.html">예약확인</a></li>
+            <li><a href="market.html">중고장터</a></li>
+            <li><a href="board.html">게시판</a></li>
+        </ul>
+    </header>
+    <section>
+        <h1>글작성</h1>
+        <form action="q&a.html" id="writeform">
+            <table cellspacing="0">
+                <tr>
+                    <th>제목</th>
+                    <td><input type="text" name="title" autocomplete="off" class="texttype" id="title" autofocus></td>
+                </tr>
+            </table>
+            <div id="editor">
+                <script>
+                    const Editor = toastui.Editor;
+                
+                    const editor = new Editor({
+                        el: document.querySelector('#editor'),
+                        height: '400px',
+                        initialEditType: 'markdown',
+                    });
+                </script>
+            </div>
+            <table cellspacing="0">
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="저장" class="buttontype">
+                        <input type="button" value="목록으로" onclick="backpage();" class="buttontype">
+                    </td>
+                </tr>
+        </table>
+        </form>
+    </section>
+    </div>
+</body>
+</html>
