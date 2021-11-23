@@ -9,7 +9,6 @@ ul{
 html, body{
     width: 100%;
     height: 100%;
-    color: white;
     margin: 0px auto;
 }
 #container{
@@ -41,38 +40,34 @@ header ul li{
     font-size: 18px;
     float: left;
 }
-section{
-    position: relative;
-    width: 100%;
-    height: 73%;
-    min-width: 1263px;
-    text-align: center;
-}
-#wrap{
-    position: relative;
-    margin: 0px auto;
-    width: 80%;
-    height: 90%;
-}
-#wrap img{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-#banner{
-    position: relative;
-    z-index: 10;
-    width: 75%;
-    display: inline-block;
-}
-#banner ul{
-    float: right;
-}
-#banner ul li{
-    list-style-type: none;
-    float: left;
-}
-#banner ul li a{
-    padding: 5px;
-}
+#visualBox { height: 720px; box-sizing: border-box; padding-top: 80px; background-color: white; }
+#visualBox > .inner { max-width: 980px; height: 90%; margin: 0 auto; position: relative; }
+#visualBox > .inner > h1 { text-align: center; font-size: 40px; margin-bottom: 10px; }
+#visualBox > .inner > h1+p { text-align: center; font-size: 18px; }
+#visualBox > .inner > .visual_img {position: absolute; width: 100%; height: 400px; background: url('/images/visual_main.jpg') bottom left no-repeat; bottom: 20px; left: 0px;}
+
+
+#introductionBox { padding: 120px 0px; background-color: #f5f5f5; }
+#introductionBox  > .inner { max-width: 980px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
+#introductionBox > .inner > h1 { width: 100%; text-align: center; margin-bottom: 50px; font-size: 36px; }
+#introductionBox > .inner > h1::after{ content: ''; display: block; width: 70px; height: 2px; background-color: #ff843d; margin: 40px auto; }
+#introductionBox > .inner > article { width: 300px; margin-bottom: 80px; text-align: center; }
+#introductionBox > .inner > article > .icon { width: 230px; height: 230px; background-color: #fa0; margin: 0 auto; margin-bottom: 0px; background: url('/images/icon-set.png') no-repeat; }
+#introductionBox > .inner > article:nth-of-type(2) > .icon{ background-position: 0 -230px; }
+#introductionBox > .inner > article:nth-of-type(3) > .icon{ background-position: 0 -460px; }
+#introductionBox > .inner > article:nth-of-type(4) > .icon{ background-position: 0 -690px; }
+#introductionBox > .inner > article:nth-of-type(5) > .icon{ background-position: 0 -920px; }
+#introductionBox > .inner > article:nth-of-type(6) > .icon{ background-position: 0 -1150px; }
+#introductionBox > .inner > article > h2 { margin-bottom: 8px; font-size: 24px; }
+#introductionBox > .inner > article > h2+p { line-height: 1.5; }
+
+#reviewBox { padding: 120px 0px; background-color: white;}
+#reviewBox  > .inner { max-width: 980px; margin: 0 auto;  }
+#reviewBox > .inner > h1 { width: 100%; text-align: center; margin-bottom: 50px; font-size: 36px; }
+#reviewBox > .inner > h1::after{ content: ''; display: block; width: 70px; height: 2px; background-color: #ff843d; margin: 40px auto; }
+#reviewBox > .inner > ul { display: flex; flex-wrap: wrap; justify-content: space-between;}
+#reviewBox > .inner > ul > li { width: 280px; margin-bottom: 80px; padding-top: 30px; padding-left: 20px; box-sizing: border-box; font-size: 18px; line-height: 1.6; position: relative; }
+#reviewBox > .inner > ul > li::before{ position: absolute; content: ''; top:0; left: 0; width: 16px; height: 15px; background: url('/images/icon-set.png') -172px -1380px no-repeat; }
+#reviewBox > .inner > ul > li > p { display: inline; }
+#reviewBox > .inner > ul > li > p.address { color: #ff843d; }
+#reviewBox > .inner > ul > li > p.address::before { content: '- '; }

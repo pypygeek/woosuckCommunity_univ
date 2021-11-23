@@ -5,6 +5,12 @@ a{
 ul{
     list-style-type: none;
 }
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+p, form, fieldset{
+  margin: 0; padding: 0;
+}
 html, body{
     width: 100%;
     margin: 0px auto;
@@ -65,41 +71,50 @@ section{
     line-height: 1.7em;
     font-size: 14px;
 }
-.secondarticle{
-    display: inline-block;
-    width: 100%;
-    min-width: 1030px;
-    max-width: 1510px;
+.container-headline {
+  font-size: 32px;
+  text-align: center;
+  margin: 0; }
+  .container-headline::after {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #ff8a3d;
+    display: block;
+    margin: 40px auto; }
+
+.categories-group {
+    text-align: center; 
 }
-.secondarticle ul{
-    float: left;
-    width: 26%;
-    min-width: 330px;
-    margin: 20px;
-    text-align: center;
+.categories-group .btn-category {
+      padding: 4px 20px;
+      border-radius: 100px;
+      border: 1px solid #E9ECF3;
+      margin-bottom: 8px; 
 }
-.secondarticle ul li{
-    width: 100%;
-    border-bottom: 1px solid;
-    padding: 10px;
-    letter-spacing: 0.3em;
-    font-size: 20px;
+.categories-group .btn-category:hover {
+        color: pink;
+        background-color: #FBFBFD; 
 }
-.secondarticle ul li img{
-    width: 100%;
+.categories-group .btn-category:focus {
+        box-shadow: none; 
 }
-.secondarticle ul li a{
-    padding: 10px;
-    font-weight: bold;
-}
-.secondarticle ul li a:hover{
-    background-color: pink;
-}
-.left-menu {
-    width: 20%;
-    height: 400px;
-    background: cornflowerblue;
-    /* float: left; */
-    display: inline-block;
-    vertical-align: top;
-}
+#hotBox { padding: 120px 0px; }
+#hotBox > .inner { max-width: 980px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
+#hotBox > .inner > h1 { width: 100%; text-align: center; margin-bottom: 50px; font-size: 36px; }
+#hotBox > .inner > h1::after{ content: ''; display: block; width: 70px; height: 2px; background-color: #ff843d; margin: 40px auto; }
+#hotBox > .inner > article { width: 224px; height: auto; border: 1px solid #dfdfdf; border-radius: 8px; overflow: hidden; margin-bottom: 40px; }
+#hotBox > .inner > article:hover { box-shadow: 0px 8px 10px rgba(0,0,0,0.4); transform: translateY(-4px) }
+#hotBox > .inner > article > a { display: block; width: 100%; height: 100%; }
+#hotBox > .inner > article > a > .img_prd { overflow: hidden; padding-top: 60%; position: relative; }
+#hotBox > .inner > article > a > .img_prd > img { width: 100%; height: auto; position: absolute; top: 0; left: 0; }
+#hotBox > .inner > article > a > .prd_information { width: 100%; height: 140px; padding: 16px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; }
+#hotBox > .inner > article > a > .prd_information > .title{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 18px; }
+#hotBox > .inner > article > a > .prd_information > .address { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #666; font-size: 16px; }
+#hotBox > .inner > article > a > .prd_information > .price { font-weight: 600; font-size: 16px; color: #ff843d; }
+#hotBox > .inner > article > a > .prd_information > .interaction { display: flex; font-size: 14px; color: #999; border-top: 1px solid #ddd; padding-top: 10px; }
+#hotBox > .inner > article > a > .prd_information > .interaction > p+p { margin-left: 16px; position: relative; }
+#hotBox > .inner > article > a > .prd_information > .interaction > p+p::before { content: '·'; position: absolute; left: -9px; }
+#hotBox > .inner > article.more { text-align: center;}
+#hotBox > .inner > article.more > a { display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; padding: 80px 0; box-sizing: border-box; }
+#hotBox > .inner > article.more > a::before { content: "+"; display: block; width: 100%; font-size: 40px; }
