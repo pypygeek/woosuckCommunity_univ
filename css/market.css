@@ -71,18 +71,6 @@ section{
     line-height: 1.7em;
     font-size: 14px;
 }
-.container-headline {
-  font-size: 32px;
-  text-align: center;
-  margin: 0; }
-  .container-headline::after {
-    content: '';
-    width: 80px;
-    height: 2px;
-    background-color: #ff8a3d;
-    display: block;
-    margin: 40px auto; }
-
 .categories-group {
     text-align: center; 
 }
@@ -93,7 +81,7 @@ section{
       margin-bottom: 8px; 
 }
 .categories-group .btn-category:hover {
-        color: pink;
+        color: #DF732D;
         background-color: #FBFBFD; 
 }
 .categories-group .btn-category:focus {
