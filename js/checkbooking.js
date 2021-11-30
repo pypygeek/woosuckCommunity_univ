@@ -4,10 +4,7 @@ window.onload = function(){
     {
         var username = document.getElementById("user_name");
         var userpnumber = new Array(document.getElementById("user_p1"),document.getElementById("user_p2"));
-        var userbnumber = document.getElementById("user_booknum");
-
         var namevalue = document.getElementById("guestname");
-        var bookingvalue = document.getElementById("bookingnumber");
 
         if(username.value == "")
         {
@@ -30,8 +27,6 @@ window.onload = function(){
         }
         else
         {
-            bookingvalue.value = document.getElementById("user_booknum").value;
-            namevalue.value = document.getElementById("user_name").value;
             let today = new Date();
             var result = confirm(today.toLocaleString() + " 예약 확인되었습니다.");
             if(result){
@@ -40,3 +35,4 @@ window.onload = function(){
         }
     }
 }
+

@@ -85,5 +85,6 @@ body {
 .profile {
   width: 50px;
   display: block;
+  object-fit: cover;
   float: left;
 }

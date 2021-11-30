@@ -51,7 +51,7 @@ section{
 }
 #sectionpart table{
     text-align: left;
-    border-top: 2px solid #A20611;
+    border-top: 2px solid #ff8a3d;
     width: 50%;
     min-width: 900px;
     margin: 10px auto;
@@ -78,7 +78,7 @@ section{
     padding: 4px;
 }
 .inputtype:focus{
-    border: 1px solid blue;
+    border: 1px solid;
 }
 .buttontype{
     width: 180px;
@@ -86,12 +86,12 @@ section{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid #A20611;
-    background-color: #A20611;
+    border: 1px solid #ff8a3d;
+    background-color: #ff8a3d;
 }
 .buttontype:hover{
-    border: 2px solid red;
-    background-color: pink;
+    border: 2px solid#DF732D;
+    background-color:#DF732D;
 }
 #smalltext{
     font-size: 20px;

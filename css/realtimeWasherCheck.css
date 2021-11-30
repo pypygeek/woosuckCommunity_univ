@@ -93,5 +93,6 @@ section{
     font-weight: bold;
 }
 .secondarticle ul li a:hover{
-    background-color: pink;
+    color: white;
+    background-color: #ff8a3d;
 }

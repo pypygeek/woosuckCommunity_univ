@@ -106,12 +106,12 @@ section{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid #A20611;
-    background-color: #A20611;
+    border: 1px solid #ff8a3d;
+    background-color: #ff8a3d;
     margin: auto;
     display: block;
 }
 .buttontype:hover{
-    border: 2px solid red;
-    background-color: pink;
+    border: 2px solid #DF732D;
+    background-color: #DF732D;
 }

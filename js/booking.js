@@ -50,7 +50,7 @@ window.onload = function(){
                 themavalue.value = "건조기";
             }
 
-            this.style.backgroundColor = "pink";
+            this.style.backgroundColor = "orange";
             bool[0] = true;
 
             return false;
@@ -110,7 +110,7 @@ window.onload = function(){
                 }
 
             bool[1] = true;
-            this.style.backgroundColor = "pink";
+            this.style.backgroundColor = "orange";
 
             return false;
         }
